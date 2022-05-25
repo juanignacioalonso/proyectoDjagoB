@@ -23,4 +23,6 @@ urlpatterns = [
     path('', include('ProyectoWebApp.urls')), #Si dejamos vacio el primer argumento no tenemos que poner el la direccion la aplicacion a la que nos referimos, si tenemos mas de una hay q definirlo
     # icluimos la url servicios
     path('servicios', include('servicios.urls')),
+    #Incluimos la url blog
+    path('blog', include('blog.urls')),
 ]
