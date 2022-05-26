@@ -15,7 +15,8 @@
                 <span class="section-heading-lower">{{post.titulo}}</span>
                 <span class="section-heading-upper">{{post.contenido}}</span>
               </h2>
-              
+
+              <div style="text-align: left; font-size: 0.8em;">Autor: {{post.autor}}</div>
              
             </div>
           </div>
@@ -24,5 +25,21 @@
 
     
     {% endfor %}
+
+    <section>
+      <div style="width:75%;margin: auto; text-align: center; color: white;">
+        Categorias:
+        {% for post in posts %}
+
+          {% for categoria in post.categorias.all %} <!-- para mostrar lo que esta en el query set, la consulta hacemos un for dentro de post y anidamos un for para la clase categorias -->
+            
+            {{categoria.nombre}} &nbsp;<!--traemos el valor nombre de la clase categorias-->
+          
+          {% endfor %}
+
+        {% endfor %}
+      
+      </div>
+    </section>
 
 {% endblock %}
