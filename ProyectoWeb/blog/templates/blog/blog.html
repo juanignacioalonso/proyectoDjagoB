@@ -33,7 +33,7 @@
 
           {% for categoria in post.categorias.all %} <!-- para mostrar lo que esta en el query set, la consulta hacemos un for dentro de post y anidamos un for para la clase categorias -->
             
-            {{categoria.nombre}} &nbsp;<!--traemos el valor nombre de la clase categorias-->
+             <a href="{% url 'categoria' categoria.id %}" class="linksCategorias">{{categoria.nombre}}</a><!--traemos el valor nombre de la clase categorias, generamos un link definiendo la url y que tome el id de categoria q tocamos-->
           
           {% endfor %}
 
