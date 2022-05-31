@@ -7,7 +7,7 @@ from . import views
 
 urlpatterns = [
     # El admin solo queda en el proyecto
-    path('',views.contacto,name='Contacto'),
+    path('/',views.contacto,name='Contacto'),
     
 ]
 
