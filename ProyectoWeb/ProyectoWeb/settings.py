@@ -127,7 +127,17 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT= BASE_DIR / 'media'
 
+EMAIL_BACKEND="django.core.mail.backends.smpt.EmailBackend"
+EMAIL_HOST="smpt.gmail.com"
+EMAIL_USE_TSL=True
+EMAIL_PORT= 587
+EMAIL_HOST_USER="zalbak87@gmail.com"
+EMAIL_HOST_PASSWORD="Droopy87"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configuracion de email
+
