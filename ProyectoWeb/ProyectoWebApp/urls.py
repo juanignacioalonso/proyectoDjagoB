@@ -11,7 +11,7 @@ from django.conf.urls.static import static # importamos la carpeta statics
 urlpatterns = [
     # El admin solo queda en el proyecto
     path('',views.home,name='Home'),
-    path('tienda/',views.tienda,name='Tienda'),
+    
     
     
 ]
