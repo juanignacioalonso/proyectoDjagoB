@@ -31,4 +31,7 @@ urlpatterns = [
     path('tienda', include('tienda.urls')),
     #Incluimos la url Carro
     path('carro', include('carro.urls')),
+    #Incluimos la url Autenticacion
+    path('autenticacion', include('autenticacion.urls')),
+
 ]
