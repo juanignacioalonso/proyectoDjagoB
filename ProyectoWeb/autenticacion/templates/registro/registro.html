@@ -3,6 +3,10 @@
 {% load static %}
 
 {% block content %}
-<p style="color: white;">hola</p>
+<form method="post" action="" style="color: white;">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-success">Registro</button>
+</form>
 
 {% endblock %} 
